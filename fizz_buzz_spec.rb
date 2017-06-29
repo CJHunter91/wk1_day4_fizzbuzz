@@ -34,4 +34,11 @@ class FizzBuzzSpec < MiniTest::Test
     assert_equal("7", fizz_buzz(7))
     
   end
+  def test_extreme_cases()
+    assert_equal("FizzBuzz", fizz_buzz(0))
+    assert_equal("Fizz", fizz_buzz(-3))
+    assert_equal("FizzBuzz", fizz_buzz(-15))
+    assert_equal("Buzz", fizz_buzz(-5))
+    assert_equal("1234567", fizz_buzz(1234567))
+  end
 end
