@@ -20,4 +20,11 @@ class FizzBuzzSpec < MiniTest::Test
     assert_equal(expected, fizz_buzz(10))
     assert_equal(expected, fizz_buzz(20))
   end
+
+  def test_divisible_by_3_and_5()
+    expected = "FizzBuzz"
+    assert_equal(expected, fizz_buzz(15))
+    assert_equal(expected, fizz_buzz(30))
+    assert_equal(expected, fizz_buzz(60))
+  end
 end
