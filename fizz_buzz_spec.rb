@@ -28,7 +28,7 @@ class FizzBuzzSpec < MiniTest::Test
     assert_equal(expected, fizz_buzz(60))
   end
 
-  def test_other_numbers()
+  def test_return_string()
     assert_equal("2", fizz_buzz(2))
     assert_equal("4", fizz_buzz(4))
     assert_equal("7", fizz_buzz(7))
