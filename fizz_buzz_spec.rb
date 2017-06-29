@@ -7,7 +7,7 @@ require_relative('./fizz_buzz.rb')
 
 class FizzBuzzSpec < MiniTest::Test
 
-  def divisible_by_3()
+  def test_divisible_by_3()
     expected = "Fizz"
     actual = fizz_buzz(3)
     assert_equal(expected, actual)
